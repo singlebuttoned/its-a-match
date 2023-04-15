@@ -1,51 +1,57 @@
 ﻿namespace Common;
 
+public class Meta
+{
+    public string name;
+    public Guid id;
+    public string description;
+    public Meta(string name, Guid id, string description)
+    {
+        this.id = id;
+        this.description = description;
+        this.name = name;
+    }
+}
+public class Theory
+{
+    public Link[] Links;
+    public string Text;
+    public Meta meta;
+}
+public interface ITask
+    {
+        Meta meta { get;set;}
+        string ExpectedResult { get;set;}
+    }
 public class Test
 {
-    public CodingTask[] CodingTasks;
-    public Guid Id;
-    public string Name;
-    public OpenQuestion[] OpenQuestions;
-    public Quiz[] Quizzes;
+    public Meta meta;
+    public ITask[] tasks;
     public Skill[] Skills;
 }
 
-public class Quiz
+public class Quiz : ITask
 {
     public ClosedQuestion[] ClosedQuestions;
-    public Guid Id;
-    public string Name;
+    public Meta meta{get;set;}
+    public string ExpectedResult{get;set;}
+}
+public class OpenQuestion : ITask
+{
+    public Meta meta {get;set;}
+    public string ExpectedResult {get;set;}
 }
 
-public class Theory
+public class CodingTask : ITask
 {
-    public Guid Id;
-    public Link[] Links;
-    public string Name;
-    public string Text;
-}
-
-public class OpenQuestion
-{
-    public string DescriptionText;
-    public Guid Id;
-    public string Name;
-}
-
-public class CodingTask
-{
-    public string DescriptionText;
-    public string ExpectedResult;
-    public Guid Id;
+    public string ExpectedResult {get;set;}
     public string Language;
-    public string Name;
+    public Meta meta{get;set;}
 }
 
 public class Skill
 {
-    public string DescriptionText;
-    public Guid Id;
-    public string Name;
+    public Meta meta;
 }
 
 public class Candidate : User
@@ -72,9 +78,7 @@ public class User
 
 public class Vacancy
 {
-    public string DescriptionText;
-    public Guid Id;
-    public string Name;
+    public Meta meta;
     public Skill[] Skills;
     public Test[] Tests;
 }
@@ -83,9 +87,7 @@ public class ClosedQuestion
 {
     public string[] Answers;
     public int CorrectAnswerIndex;
-    public string DescriptionText;
-    public Guid Id;
-    public string Name;
+    public Meta meta;
 }
 
 public class Link
