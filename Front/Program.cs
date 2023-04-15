@@ -1,6 +1,6 @@
 ﻿using Avalonia;
+using Avalonia.ReactiveUI;
 using System;
-using Common;
 
 namespace Front;
 
@@ -17,10 +17,6 @@ class Program
     public static AppBuilder BuildAvaloniaApp()
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
-            .LogToTrace();
-
-    public void Do()
-    {
-        var test = new Test();
-    }
+            .LogToTrace()
+            .UseReactiveUI();
 }

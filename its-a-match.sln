@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{DA1486FF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{ACCC3998-DFDD-4EBB-AA17-45A74842B855}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front", "Front\Front.csproj", "{FB657689-50CE-4399-B313-990C43E85782}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front", "Front\Front.csproj", "{A4135171-15D8-400C-955D-54C0E08AE01A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,16 +17,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{ACCC3998-DFDD-4EBB-AA17-45A74842B855} = {F831360B-4231-45AE-A031-6942E02BB6AB}
-		{FB657689-50CE-4399-B313-990C43E85782} = {DA1486FF-A425-414D-BB24-0D0AF4E548D0}
+		{A4135171-15D8-400C-955D-54C0E08AE01A} = {DA1486FF-A425-414D-BB24-0D0AF4E548D0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB657689-50CE-4399-B313-990C43E85782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB657689-50CE-4399-B313-990C43E85782}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB657689-50CE-4399-B313-990C43E85782}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB657689-50CE-4399-B313-990C43E85782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4135171-15D8-400C-955D-54C0E08AE01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4135171-15D8-400C-955D-54C0E08AE01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4135171-15D8-400C-955D-54C0E08AE01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4135171-15D8-400C-955D-54C0E08AE01A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
