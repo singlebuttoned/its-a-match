@@ -2,17 +2,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:Front.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Front.Views.MainView"
-             x:DataType="vm:MainViewModel">
+             xmlns:vm="clr-namespace:Front.ViewModels"
+             x:Class="Front.Views.Main.Header.HeaderUserControl"
+             x:DataType="vm:HeaderViewModel">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainViewModel />
+        <vm:HeaderViewModel />
     </Design.DataContext>
-
-    <Grid RowDefinitions="*,Auto,*" ColumnDefinitions="*,*,*">
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="hello" Background="Blue"/>
+    <Grid ColumnDefinitions="*,*,*">
+        <Button Grid.Column="0" Content="{Binding HomeButtonText}" HorizontalAlignment="Center"/>
+        <Button Grid.Column="1" Content="{Binding VacanciesButtonText}" HorizontalAlignment="Center"/>
+        <Button Grid.Column="2" Content="{Binding ProfileButtonText}" HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>

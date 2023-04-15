@@ -3,6 +3,8 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Front.ViewModels;
 using Front.Views;
+using MainView = Front.Views.Main.MainView;
+using MainWindow = Front.Views.Main.MainWindow;
 
 namespace Front;
 
