@@ -1,5 +1,6 @@
 import subprocess
 import os
+import BackendAPI
 
 Compilers = {
     "cs" : "csc",
@@ -12,16 +13,9 @@ Compilers = {
     "ts" : "npx ts-node"
 }
 
-class Task:
-    def __init__(self,name):
-        self.name = name
-        self.id = '1'
-        self.result = "hello"
-    def getResult(self):
-        return self.result
-#ДОПИСАТЬ КОД ЗАДАЧИ, ДОЛЖЕН СОДЕРЖАТЬ МЕТАДАННЫЕ(имя итд.) И ОТВЕТ НА ЗАДАЧУ(string)
-
-def requestHandle(lang: str,code: str, task: Task):
+def requestHandle(solution: Solution):
+    lang = solution.lang
+    code = solution.code
     codefile = open(f'codeToTest.{lang}','w')
     codefile.write(code)
     codefile.close()
