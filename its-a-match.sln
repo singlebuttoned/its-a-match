@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{F831360B-4231-45AE-A031-6942E02BB6AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "back", "back", "{71062F49-701A-42E0-AA59-DF2230421C3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "front", "front", "{DA1486FF-A425-414D-BB24-0D0AF4E548D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{ACCC3998-DFDD-4EBB-AA17-45A74842B855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front", "Front\Front.csproj", "{FB657689-50CE-4399-B313-990C43E85782}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACCC3998-DFDD-4EBB-AA17-45A74842B855} = {F831360B-4231-45AE-A031-6942E02BB6AB}
+		{FB657689-50CE-4399-B313-990C43E85782} = {DA1486FF-A425-414D-BB24-0D0AF4E548D0}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCC3998-DFDD-4EBB-AA17-45A74842B855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB657689-50CE-4399-B313-990C43E85782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB657689-50CE-4399-B313-990C43E85782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB657689-50CE-4399-B313-990C43E85782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB657689-50CE-4399-B313-990C43E85782}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
