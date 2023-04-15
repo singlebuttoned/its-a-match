@@ -93,6 +93,8 @@ class DTOs
         Guid Id;
         string Name;
         string DescriptionText;
+        string[] Answers;
+        int CorrectAnswerIndex;
     }
     
     class Link
