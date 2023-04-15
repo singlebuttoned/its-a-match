@@ -12,8 +12,8 @@
         <vm:HeaderViewModel />
     </Design.DataContext>
     <Grid ColumnDefinitions="*,*,*">
-        <Button Grid.Column="0" Content="{Binding HomeButtonText}" HorizontalAlignment="Center"/>
-        <Button Grid.Column="1" Content="{Binding VacanciesButtonText}" HorizontalAlignment="Center"/>
-        <Button Grid.Column="2" Content="{Binding ProfileButtonText}" HorizontalAlignment="Center"/>
+        <Button Grid.Column="0" Content="{Binding HomeButtonText}" HorizontalAlignment="Center" />
+        <Button Grid.Column="1" Content="{Binding VacanciesButtonText}" HorizontalAlignment="Center" />
+        <Button Grid.Column="2" Content="{Binding ProfileButtonText}" HorizontalAlignment="Center" />
     </Grid>
 </UserControl>
