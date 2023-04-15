@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              xmlns:vm="clr-namespace:Front.ViewModels"
-             x:Class="Front.Views.Main.Header.HeaderUserControl"
+             x:Class="Front.Views.Main.Header.HeaderView"
              x:DataType="vm:HeaderViewModel">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,

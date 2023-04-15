@@ -5,6 +5,10 @@
       <map>
         <entry key="Front/Front/App.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Header/HeaderUserControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/Header/HeaderView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/Landing/BannerView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/Landing/LandingControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/MainView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/MainView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
       </map>
     </option>

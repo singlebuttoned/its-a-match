@@ -1,11 +1,11 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Front.Views.Main.Header;
+namespace Front.Views.Main.Landing;
 
-public partial class HeaderUserControl : UserControl
+public partial class LandingView : UserControl
 {
-    public HeaderUserControl()
+    public LandingView()
     {
         InitializeComponent();
     }
