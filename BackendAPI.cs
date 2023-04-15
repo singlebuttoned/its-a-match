@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BackendAPI
 {
-    public abstract class Meta
+    public class Meta
     {
         string name {public get; set;}
         int id {public get;set;}
@@ -17,11 +17,23 @@ namespace BackendAPI
             this.name = name;
         }
     }
-    public class Task
+    public interface ITask
     {
-        public enum TaskTypes {Quiz,CodingTask,OpenQuestion};
-        Meta meta {public get;set;}
-        string expectedResult {public get;set;}
+        Meta meta {public get; set;}
+        string ExpectedResult {public get;set;}
+    }
+
+    public class Quiz : ITask
+    {
+
+    }
+    public class OpenQuestion : ITask
+    {
+
+    }
+    public class CodingTask : ITask
+    {
+        
     }
     public class Test
     {
@@ -45,7 +57,7 @@ namespace BackendAPI
         }
         bool SolutionRequest(Solution solution)
         {
-            
+
         }
     }
 }
