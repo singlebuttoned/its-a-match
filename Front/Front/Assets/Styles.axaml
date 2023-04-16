@@ -7,7 +7,7 @@
     </Design.PreviewWith>
 
     <Style Selector="Button.ButtonFill">
-        <Setter Property="Background" Value="{DynamicResource MainColor}" />
+        <Setter Property="Background" Value="{DynamicResource BlueAndAccText4}" />
         <Setter Property="CornerRadius" Value="30" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="Padding" Value="90,16,90,16" />
@@ -42,6 +42,11 @@
         <Setter Property="LetterSpacing" Value="0" />
         <Setter Property="TextAlignment" Value="Left" />
         <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+    
+    <Style Selector="Border.card">
+        <Setter Property="Padding" Value="24" />
+        <Setter Property="CornerRadius" Value="10" />
     </Style>
     
 </Styles>

@@ -9,6 +9,7 @@
         <entry key="Front/Front/Assets/Styles.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
         <entry key="Front/Front/Views/Main/Header/HeaderUserControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Header/HeaderView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/Landing/AdvantagesCardsView.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
         <entry key="Front/Front/Views/Main/Landing/BannerView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Landing/LandingControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Landing/LandingView.axaml" value="Front/Front.Browser/Front.Browser.csproj" />

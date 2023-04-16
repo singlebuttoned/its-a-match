@@ -1,0 +1,44 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:Front.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Front.Views.Main.Landing.AdvantagesCardsView"
+             x:DataType="viewModels:AdvantagesCardViewModel">
+    <Design.DataContext>
+        <viewModels:AdvantagesCardViewModel/>
+    </Design.DataContext>
+    
+    <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*" >
+        <Border
+            Grid.Column="0" 
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Background="{DynamicResource LightBlue}"
+            Classes="card" 
+            RelativePanel.AlignTopWithPanel="True"
+            RelativePanel.AlignLeftWithPanel="True">
+            <TextBlock Text="{Binding LeftCardText}" Classes="t2"/>
+        </Border>
+        <Border
+            Grid.Column="1" 
+            Grid.Row="2"
+            Background="White"
+            Classes="card" 
+            RelativePanel.AlignTopWithPanel="True"
+            RelativePanel.AlignRightWithPanel="True">
+            <TextBlock Text="{Binding TopRightCardText}" Classes="t2"/>
+        </Border>
+        <Border
+            Grid.Row="1" 
+            Grid.Column="1" 
+            Background="White"
+            Classes="card"
+            RelativePanel.AlignBottomWithPanel="True"
+            RelativePanel.AlignRightWithPanel="True"
+            RelativePanel.AlignLeftWith="TopRightCard">
+            <TextBlock Text="{Binding BottomRightCardText}" Classes="t2"/>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,6 +1,9 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:Double x:Key="SizeConstant/4">12</system:Double>
+    <system:Double x:Key="SizeConstant/3">16</system:Double>
+    <system:Double x:Key="SizeConstant/2">24</system:Double>
     <system:Double x:Key="SizeConstant">48</system:Double>
     <system:Double x:Key="SizeConstant2">96</system:Double>
     <system:Double x:Key="SizeConstant3">144</system:Double>

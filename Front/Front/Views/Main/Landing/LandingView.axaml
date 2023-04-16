@@ -7,13 +7,30 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Front.Views.Main.Landing.LandingView">
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <viewModels:LandingViewModel />
     </Design.DataContext>
     <Grid ColumnDefinitions="*,3*,*" RowDefinitions="*,*,*,*" >
-        <landing:BannerView Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Height="{DynamicResource SizeConstant10}"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="1" Background="Aqua" HorizontalAlignment="Center"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="2" Background="Red" HorizontalAlignment="Center"/>
+        <landing:BannerView 
+            Grid.Row="0" 
+            Grid.ColumnSpan="3" 
+            HorizontalAlignment="Stretch" 
+            Height="{DynamicResource SizeConstant10}"/>
+        <landing:AdvantagesCardsView 
+            Grid.Row="1" 
+            Grid.Column="1" 
+            VerticalAlignment="Stretch"
+            Height="{DynamicResource SizeConstant8}"/>
+        <Button 
+            Grid.Row="2" 
+            Grid.Column="1" 
+            Content="2" 
+            Background="Red" 
+            HorizontalAlignment="Center"/>
+        <Button
+            Grid.Row="3" 
+            Grid.Column="1" 
+            Content="3" 
+            Background="Red" 
+            HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>
