@@ -12,21 +12,15 @@
 
     <Application.Styles>
         <FluentTheme />
+        <StyleInclude Source="/Assets/Styles.axaml"/>
     </Application.Styles>
     
     <Application.Resources>
-        <system:Double x:Key="SizeConstant">48</system:Double>
-        <system:Double x:Key="SizeConstant2">96</system:Double>
-        <system:Double x:Key="SizeConstant3">144</system:Double>
-        <system:Double x:Key="SizeConstant4">192</system:Double>
-        <system:Double x:Key="SizeConstant5">240</system:Double>
-        <system:Double x:Key="SizeConstant6">288</system:Double>
-        <system:Double x:Key="SizeConstant7">336</system:Double>
-        <system:Double x:Key="SizeConstant8">384</system:Double>
-        <system:Double x:Key="SizeConstant9">432</system:Double>
-        <system:Double x:Key="SizeConstant10">480</system:Double>
-        <system:Double x:Key="SizeConstant20">960</system:Double>
-        <system:Double x:Key="SizeConstant30">1440</system:Double>
-        <system:Double x:Key="SizeConstant40">1920</system:Double>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="/Assets/Colors.axaml"/>
+                <ResourceInclude Source="/Assets/Constants.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

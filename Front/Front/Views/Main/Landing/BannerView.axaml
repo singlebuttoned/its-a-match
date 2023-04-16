@@ -4,20 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:Front.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Front.Views.Main.Landing.BannerView">
+             x:Class="Front.Views.Main.Landing.BannerView"
+             x:DataType="viewModels:BannerViewModel">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <viewModels:BannerViewModel />
     </Design.DataContext>
-    <Grid RowDefinitions="2*,3*,3*,2*">
-        <Button/>
-        <StackPanel Grid.Row="1">
-            <Label Content="Header"/>
-            <Label Content="Subheader"/>
-        </StackPanel>
-        <StackPanel Grid.Row="2">
-            <Button VerticalAlignment="Bottom" Content="Join"/>
-        </StackPanel>
+    <Grid RowDefinitions="2*,6*,2*" ColumnDefinitions="*,3*,*">
+        <Grid.Background>
+            <ImageBrush Source="/Assets/banner-image2.png" Stretch="Fill" />
+        </Grid.Background>
+        <RelativePanel Grid.Row="1" Grid.Column="1">
+            <TextBlock
+                x:Name="Header"
+                Text="{Binding Header}"
+                Classes="h1"
+                RelativePanel.AlignTopWithPanel="True" />
+            <TextBlock 
+                x:Name="Subheader"
+                Text="{Binding Subheader}" 
+                Classes="t2" 
+                RelativePanel.Below="Header"/>
+            <Button 
+                Content="{Binding ButtonText}" 
+                Classes="ButtonFill" 
+                RelativePanel.AlignLeftWithPanel="True"
+                RelativePanel.AlignBottomWithPanel="True"/>
+        </RelativePanel>
     </Grid>
 </UserControl>

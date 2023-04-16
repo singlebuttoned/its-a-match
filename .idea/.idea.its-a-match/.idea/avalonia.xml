@@ -4,11 +4,16 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Front/Front/App.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Assets/Colors.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
+        <entry key="Front/Front/Assets/Constants.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
+        <entry key="Front/Front/Assets/Styles.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
         <entry key="Front/Front/Views/Main/Header/HeaderUserControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Header/HeaderView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Landing/BannerView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
         <entry key="Front/Front/Views/Main/Landing/LandingControl.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/Landing/LandingView.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
         <entry key="Front/Front/Views/Main/MainView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
+        <entry key="Front/Front/Views/Main/MainWindow.axaml" value="Front/Front.Browser/Front.Browser.csproj" />
         <entry key="Front/Front/Views/MainView.axaml" value="Front/Front.Desktop/Front.Desktop.csproj" />
       </map>
     </option>

@@ -12,7 +12,7 @@
         <viewModels:LandingViewModel />
     </Design.DataContext>
     <Grid ColumnDefinitions="*,3*,*" RowDefinitions="*,*,*,*" >
-        <landing:BannerView Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" Height="{StaticResource SizeConstant10}"/>
+        <landing:BannerView Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Height="{DynamicResource SizeConstant10}"/>
         <Button Grid.Row="1" Grid.Column="1" Content="1" Background="Aqua" HorizontalAlignment="Center"/>
         <Button Grid.Row="2" Grid.Column="1" Content="2" Background="Red" HorizontalAlignment="Center"/>
     </Grid>
