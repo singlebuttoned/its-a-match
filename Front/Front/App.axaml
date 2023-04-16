@@ -3,7 +3,7 @@
              xmlns:local="using:Front"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
              x:Class="Front.App"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Light">
     <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
@@ -12,7 +12,6 @@
 
     <Application.Styles>
         <FluentTheme />
-        <StyleInclude Source="avares://Avalonia.Themes.Fluent/FluentLight.xaml" />
     </Application.Styles>
     
     <Application.Resources>
