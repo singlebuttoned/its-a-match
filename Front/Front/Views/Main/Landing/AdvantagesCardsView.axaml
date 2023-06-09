@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:Front.ViewModels"
+             xmlns:stuff="clr-namespace:Front.stuff"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Front.Views.Main.Landing.AdvantagesCardsView"
              x:DataType="viewModels:AdvantagesCardViewModel">
@@ -10,12 +11,12 @@
         <viewModels:AdvantagesCardViewModel/>
     </Design.DataContext>
     
-    <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*" >
+    <Grid ColumnDefinitions="*,20" RowDefinitions="*,*,*,*" >
         <Border
             Grid.Column="0" 
             Grid.Row="1"
             Grid.RowSpan="2"
-            Background="{DynamicResource LightBlue}"
+            Background="{x:Static stuff:Res.BlueAndAccText4}"
             Classes="card" 
             RelativePanel.AlignTopWithPanel="True"
             RelativePanel.AlignLeftWithPanel="True">
